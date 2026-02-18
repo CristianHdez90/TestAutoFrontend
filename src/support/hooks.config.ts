@@ -20,13 +20,14 @@ BeforeAll(async () => {
         console.log('Se limpiaron los reportes de Serenity');
     }
 
-    const headless = process.env.HEADLESS !== 'true';
+    // const headless = process.env.HEADLESS !== 'true';
 
     // Lanzar Chrome real (no Chromium) una sola vez para todos los escenarios
     browser = await playwright.chromium.launch({
         channel: 'chrome',
-        headless,
-        args: ['--start-maximized'],
+        headless: process.env.HEADLESS === 'true',
+        // args: ['--start-maximized'],
+        
     });
 
     console.log('Navegador lanzado globalmente');
@@ -42,7 +43,8 @@ AfterAll(async () => {
 Before(async function () {
     // Crear un nuevo contexto y página por escenario para aislamiento
     const context = await browser.newContext({
-        viewport: null,
+        // viewport: null,
+        viewport: { width: 1920, height: 1080 },
     });
     const page = await context.newPage();
 

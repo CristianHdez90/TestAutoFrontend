@@ -10,10 +10,10 @@ export class GetApi{
             }
             ),
              // Después de enviar la request, mostramos la respuesta
-            // Interaction.where(`#actor muestra la respuesta`, async actor => {
-            //     const response = await LastResponse.body<any>().answeredBy(actor);
-            //     console.log(`Respuesta recibida: ${JSON.stringify(response)}`);
-            // })
+            Interaction.where(`#actor muestra la respuesta`, async actor => {
+                const response = await LastResponse.body<any>().answeredBy(actor);
+                console.log(`Respuesta recibida: ${JSON.stringify(response)}`);
+            })
         );
     }
 }

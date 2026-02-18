@@ -38,13 +38,23 @@ export class CreateCustomerPage {
 
     static TIPO_IDENTIFICACION(tipo: string) {
         return PageElement.located(
-            By.css(`ul li.mdc-list-item[data-value*="${tipo}"]:nth-of-type(3) span.mdc-list-item__text`)
+            // By.css(`ul li.mdc-list-item[data-value*="${tipo}"]:nth-of-type(3)`)
+            By.css(`div.mdc-select.mdc-select--activated li.mdc-list-item[data-value*='${tipo}']`)
         ).describedAs(`Selector Tipo Identificación ${tipo}`);
     }
-
+    
     static TIPO_IDENTIFICACION_STRING(tipo: string): string {
-        return `ul li.mdc-list-item[data-value*="${tipo}"]:nth-of-type(3) span.mdc-list-item__text`;
-    }
+        return `ul li.mdc-list-item[data-value*="${tipo}"]:nth-of-type(3)`;
+    }   
+
+    // static TIPO_IDENTIFICACION(tipo: string) {
+    //     return PageElement.located(
+    //         // By.css(`siigo-dropdownlist-web:has-text("Tipo de identificación") >> li.mdc-list-item:has-text("${nombre}"):nth-of-type(3)`)
+    //         By.css(`siigo-dropdownlist-web:has-text("Tipo de identificación") >> div.mdc-select__menu.mdc-menu-surface--open >> li.mdc-list-item:has-text("${tipo}")`
+    //         )
+    //     ).describedAs(`Opción ${tipo}`);
+    // }
+
 
     static readonly INPUT_NUMERO_IDENTIFICACION = PageElement.located(
         By.css('#identification input')
@@ -223,21 +233,6 @@ export class CreateCustomerPage {
     static readonly MENSAJE_ALERTA = PageElement.located(
         By.css('[role="alert"] p')
     ).describedAs('Mensaje de alerta');
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
 
 
 
