@@ -180,7 +180,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-02-2026 05:53</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-02-2026 14:13</span>
     <br style="clear:left"/>
 </div>
 
@@ -211,6 +211,13 @@ Para registrarlo correctamente en el sistema
                         <td valign="top" align="right">
                             <p class="tag">
                                 <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="c68fd6639ab29c4b0ac02a78bc39f4e22557bcaa40ef14c903ac0e584626edfe.html">1 To 2 Minutes
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
                                     <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="91f3607e54568a0fd903aa1c4b031a6419220b2b781cc2fff92826534fff6408.html">Terceros
                                 </a>
                                 </span>
@@ -228,13 +235,6 @@ Para registrarlo correctamente en el sistema
                                 </a>
                                 </span>
                             </p>
-                            <p class="tag">
-                                <span class="badge tag-badge" style="background:default;"
-                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="5698da923f295f46ce5ab64ced2311fc60caa4e36b32112606d3adcfdce3f60b.html">30 To 60 Seconds
-                                        (Duration)
-                                </a>
-                                </span>
-                            </p>
                         </td>
                     </tr>
                 </table>
@@ -243,9 +243,9 @@ Para registrarlo correctamente en el sistema
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Crear cliente tercero exitosamente
+                                <span class="success-color">Crear cliente tercero exitosamente
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -266,116 +266,232 @@ Para registrarlo correctamente en el sistema
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Assertion error: Timeout of 3s has expired while waiting for Selector Tipo Identificaci&oacute;n C&eacute;dula de ciudadan&iacute;a to become visibleExpectation: isVisible()Expected boolean:   trueReceived PlaywrightPageElementPlaywrightPageElement {  locator: PlaywrightLocator {    parent: PlaywrightRootLocator { }    selector: ByCss {  value: 'ul li.mdc-list-item[data-value*='C&eacute;dula de ciudadan&iacute;a']:nth-of-type(3) span.mdc-list-item__text'    }  }}    at /home/runner/work/TestAutoFrontend/TestAutoFrontend/src/com/siigo/certification/front/steps/CrearCliente.steps.ts:14:18</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-overall">
-            <div class="card">
-                <div class="card-header">
-                    <h4>AssertionError </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>.(/home/runner/work/TestAutoFrontend/TestAutoFrontend/src/com/siigo/certification/front/steps/CrearCliente.steps.ts:14)<br />.ErrorFactory.create()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Object.errorHandler()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/activities/Wait.ts:284)<br />.ScheduledOperation.invoke()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:180)<br />.ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:142)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.ScheduledOperation.invoke()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:168)<br />.ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:142)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:151)<br />.async ScheduledOperation.start()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts:132)<br />.async WaitUntil.performAs()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/activities/Wait.ts:265)<br /></pre>
-                    </div>
-
-                    <h4>
-                        Caused by: TimeoutExpiredError
-                    </h4>
-                    <div>
-                            <pre>Timeout of 3s has expired</pre>
-                        <pre>.ScheduledOperation.invoke()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts :168)<br />.ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts :142)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts :151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts :151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts :151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts :151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts :151)<br />.async ScheduledOperation.poll()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts :151)<br />.async ScheduledOperation.start()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/models/Scheduler.ts :132)<br />.async WaitUntil.performAs()(/home/runner/work/TestAutoFrontend/TestAutoFrontend/node_modules/@serenity-js/core/src/screenplay/time/activities/Wait.ts :265)<br /></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-            </div>
     <!-- Swiper Carousel -->
     <div class="swiper">
         <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-navigates-to-https-qasta-e6a3f5a106.png" title=" Crear cliente tercero exitosamente #1 - tipoPersona: Es persona, tipoIdentificacion: C&eacute;dula de ciudadan&iacute;a, numeroIdentificacion: Random, dv: 1, codSucursal: 101, nombres: Juan, apellidos: Perez, razonSocial: test, ciudad: Sabaneta, direccion: cl45a #46-78, indicativo: 57, telefono: 2859984, extension: 401, correo: test1@test.com, tipoIva: No responsable de IVA, indicativoFactura: 102, telefonoFactura: 2587474, codigoPostal: 58485, nombreContacto: Pepito, apellidoContacto: Garcia, emailContacto: pepito@gamil.com, cargo: Gerente, indicativoContacto: 104, telefonoContacto: 7852385, resultado: Tercero guardado exitosamente" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-navigates-to-https-qasta-3870ceb064.png" title=" Crear cliente tercero exitosamente #1 - tipoPersona: Es persona, tipoIdentificacion: C&eacute;dula de ciudadan&iacute;a, numeroIdentificacion: Random, dv: 1, codSucursal: 101, nombres: Juan, apellidos: Perez, razonSocial: test, ciudad: Sabaneta, direccion: cl45a #46-78, indicativo: 57, telefono: 2859984, extension: 401, correo: test1@test.com, tipoIva: No responsable de IVA, indicativoFactura: 102, telefonoFactura: 2587474, codigoPostal: 58485, nombreContacto: Pepito, apellidoContacto: Garcia, emailContacto: pepito@gamil.com, cargo: Gerente, indicativoContacto: 104, telefonoContacto: 7852385, resultado: Tercero guardado exitosamente" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-navigates-to-https-qasta-e6a3f5a106.png" title=" Given Userqa abre la aplicaci&oacute;n Siigo en la p&aacute;gina de inicio de sesi&oacute;n" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-navigates-to-https-qasta-3870ceb064.png" title=" Given Userqa abre la aplicaci&oacute;n Siigo en la p&aacute;gina de inicio de sesi&oacute;n" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-navigates-to-https-qasta-e6a3f5a106.png" title=" #open the application base URL" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-navigates-to-https-qasta-3870ceb064.png" title=" #open the application base URL" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-navigates-to-https-qasta-e6a3f5a106.png" title=" Userqa navigates to &amp;quot;https://qastaging.siigo.com/#/login&amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-navigates-to-https-qasta-3870ceb064.png" title=" Userqa navigates to &amp;quot;https://qastaging.siigo.com/#/login&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-retoautomationsiigo-aeff90b41c.png" title=" When el ingresa las credenciales v&aacute;lidas e inicia sesi&oacute;n" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-retoautomationsiigo-71e8392b64.png" title=" When el ingresa las credenciales v&aacute;lidas e inicia sesi&oacute;n" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-retoautomationsiigo-aeff90b41c.png" title=" #log in with invalid credentials" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-retoautomationsiigo-71e8392b64.png" title=" #log in with invalid credentials" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-retoautomationsiigo-aeff90b41c.png" title=" Userqa enters &amp;quot;retoautomationsiigo2@yopmail.com&amp;quot; into input correo electr&oacute;nico" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-retoautomationsiigo-71e8392b64.png" title=" Userqa enters &amp;quot;retoautomationsiigo2@yopmail.com&amp;quot; into input correo electr&oacute;nico" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-j1h4-zmtv3-into-in-80fa36b024.png" title=" Userqa enters &amp;quot;J1h4{zMTV3&amp;quot; into input contrase&ntilde;a" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-j1h4-zmtv3-into-in-6c5d6fda94.png" title=" Userqa enters &amp;quot;J1h4{zMTV3&amp;quot; into input contrase&ntilde;a" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-bot-n-iniciar-ses-f423a60062.png" title=" Userqa clicks on bot&oacute;n iniciar sesi&oacute;n" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-bot-n-iniciar-ses-e4b22687ce.png" title=" Userqa clicks on bot&oacute;n iniciar sesi&oacute;n" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-12s-02c4da4885.png" title=" Userqa waits for 12s" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-12s-87ddb3c640.png" title=" Userqa waits for 12s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-bot-n-crear-980cec32a2.png" title=" When el crea un cliente tercero con los siguientes datos:
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-bot-n-crear-59010af61e.png" title=" When el crea un cliente tercero con los siguientes datos:
 | tipoPersona | tipoIdentificacion   | numeroIdentificacion | dv | codSucursal | nombres | apellidos | razonSocial | ciudad   | direccion    | indicativo | telefono | extension | correo         | tipoIva               | indicativoFactura | telefonoFactura | codigoPostal | nombreContacto | apellidoContacto | emailContacto    | cargo   | indicativoContacto | telefonoContacto |
 | Es persona  | C&eacute;dula de ciudadan&iacute;a | Random               | 1  | 101         | Juan    | Perez     | test        | Sabaneta | cl45a #46-78 | 57         | 2859984  | 401       | test1@test.com | No responsable de IVA | 102               | 2587474         | 58485        | Pepito         | Garcia           | pepito@gamil.com | Gerente | 104                | 7852385          |" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-bot-n-crear-980cec32a2.png" title=" #crear un cliente tercero con los siguientes datos" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-bot-n-crear-59010af61e.png" title=" #crear un cliente tercero con los siguientes datos" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-bot-n-crear-980cec32a2.png" title=" Userqa clicks on bot&oacute;n crear" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-bot-n-crear-59010af61e.png" title=" Userqa clicks on bot&oacute;n crear" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-2s-0aa67e59ec.png" title=" Userqa waits for 2s" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-2s-59010af61e.png" title=" Userqa waits for 2s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-opci-n-clientes-c377d50f70.png" title=" Userqa clicks on opci&oacute;n clientes" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-opci-n-clientes-9ca4c4bfbf.png" title=" Userqa clicks on opci&oacute;n clientes" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-8s-876cba0ff9.png" title=" Userqa waits for 8s" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-8s-80bcac9fb6.png" title=" Userqa waits for 8s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-selector-tipo-de-b95fe1d0e1.png" title=" Userqa clicks on Selector Tipo de Tercero" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-selector-tipo-de-d4a8f3821e.png" title=" Userqa clicks on Selector Tipo de Tercero" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-selector-tipo-es-5f9a8fd975.png" title=" Userqa clicks on Selector Tipo Es persona" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-selector-tipo-es-c005d436f2.png" title=" Userqa clicks on Selector Tipo Es persona" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-5s-9fd654dd09.png" title=" Userqa waits for 5s" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-5s-852c65f09d.png" title=" Userqa waits for 5s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-selector-tipo-de-9fd654dd09.png" title=" Userqa clicks on Selector Tipo de Identificaci&oacute;n" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-selector-tipo-de-e2eead5d14.png" title=" Userqa clicks on Selector Tipo de Identificaci&oacute;n" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-scroll-to-element-ul-li.mdc-list-9fd654dd09.png" title=" #scroll to element ul li.mdc-list-item[data-value*=&amp;quot;C&eacute;dula de ciudadan&iacute;a&amp;quot;]:nth-of-type(3) span.mdc-list-item__text in the center of the viewport" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-scroll-to-element-ul-li.mdc-list-cfc5fff8ff.png" title=" #scroll to element ul li.mdc-list-item[data-value*=&amp;quot;C&eacute;dula de ciudadan&iacute;a&amp;quot;]:nth-of-type(3) in the center of the viewport" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-until-selector-tipo-i-9fd654dd09.png" title=" Userqa waits until Selector Tipo Identificación Cédula de ciudadanía does become visible: <span class='failing-color'>FAILURE</span>" width="0" />
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-until-selector-tipo-i-b4a09d7a71.png" title=" Userqa waits until Selector Tipo Identificaci&oacute;n C&eacute;dula de ciudadan&iacute;a does become visible" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-selector-tipo-ide-e762394b76.png" title=" Userqa clicks on Selector Tipo Identificaci&oacute;n C&eacute;dula de ciudadan&iacute;a" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-9974933518-into-in-722c30d6d2.png" title=" Userqa enters &amp;quot;9974933518&amp;quot; into input n&uacute;mero de identificaci&oacute;n" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-1-into-input-d-git-e7a0d2e6d4.png" title=" Userqa enters &amp;quot;1&amp;quot; into input d&iacute;gito de verificaci&oacute;n" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-101-into-input-c-d-e504f793bf.png" title=" Userqa enters &amp;quot;101&amp;quot; into input c&oacute;digo de sucursal" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-juan-into-input-no-ae46d411f5.png" title=" Userqa enters &amp;quot;Juan&amp;quot; into input nombre" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-perez-into-input-a-a3c07d57df.png" title=" Userqa enters &amp;quot;Perez&amp;quot; into input apellidos" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-test-into-input-no-530d55b7ac.png" title=" Userqa enters &amp;quot;test&amp;quot; into input Nombre comercial" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-57-into-input-indi-c00133c286.png" title=" Userqa enters &amp;quot;57&amp;quot; into input indicativo" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-2859984-into-input-84714b4573.png" title=" Userqa enters &amp;quot;2859984&amp;quot; into input n&uacute;mero de tel&eacute;fono" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-401-into-input-ext-0c10f0ceca.png" title=" Userqa enters &amp;quot;401&amp;quot; into input extensi&oacute;n" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-test1-test.com-int-555d88eeec.png" title=" Userqa enters &amp;quot;test1@test.com&amp;quot; into input email" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-102-into-input-ind-0a183c08dd.png" title=" Userqa enters &amp;quot;102&amp;quot; into input indicativo" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-2587474-into-input-92d1f968bf.png" title=" Userqa enters &amp;quot;2587474&amp;quot; into input tel&eacute;fono factura" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-58485-into-input-c-57fd4fee21.png" title=" Userqa enters &amp;quot;58485&amp;quot; into input c&oacute;digo postal" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-label-ciudad-b088b000b7.png" title=" Userqa clicks on label ciudad" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-scroll-to-element-input.mdc-text-2f364b7eff.png" title=" #scroll to element input.mdc-text-field__input[name=&amp;quot;inputAutocompletecity&amp;quot;] in the center of the viewport" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-input-ciudad-febe8ed8d1.png" title=" Userqa clicks on input ciudad" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-sabaneta-into-inpu-f3ac6b2a3b.png" title=" Userqa enters &amp;quot;Sabaneta&amp;quot; into input ciudad" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-2s-4608dc75cd.png" title=" Userqa waits for 2s" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-opci-n-ciudad-837963919e.png" title=" Userqa clicks on opci&oacute;n ciudad" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-cl45a-46-78-into-b2b349f84e.png" title=" Userqa enters &amp;quot;cl45a #46-78&amp;quot; into input direcci&oacute;n" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-selector-tipo-de-72222b6b61.png" title=" Userqa clicks on Selector Tipo de IVA" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-opci-n-no-respons-ce550a83e6.png" title=" Userqa clicks on Opci&oacute;n No responsable de IVA" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-card-contacto-9245c93a0f.png" title=" Userqa clicks on Card Contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-scroll-to-element-input.mdc-text-5f714d60c9.png" title=" #scroll to element input.mdc-text-field__input[name=&amp;quot;LastName&amp;quot;] in the center of the viewport" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-pepito-into-input-dfa039426c.png" title=" Userqa enters &amp;quot;Pepito&amp;quot; into input nombre contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-garcia-into-input-8aee6c2c6b.png" title=" Userqa enters &amp;quot;Garcia&amp;quot; into input apellido contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-pepito-gamil.com-i-364cb1af3b.png" title=" Userqa enters &amp;quot;pepito@gamil.com&amp;quot; into input email contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-gerente-into-input-a02f424157.png" title=" Userqa enters &amp;quot;Gerente&amp;quot; into input cargo" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-104-into-input-ind-c5e8057132.png" title=" Userqa enters &amp;quot;104&amp;quot; into input indicativo contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-7852385-into-input-65bf51c48a.png" title=" Userqa enters &amp;quot;7852385&amp;quot; into input tel&eacute;fono contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-card-contacto-e1b9ab5e1a.png" title=" Userqa clicks on Card Contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-3s-4a034303e8.png" title=" Userqa waits for 3s" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-card-vendedor-cob-e5c16c1d0c.png" title=" Userqa clicks on Card Vendedor/Cobrador" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-label-vendedor-15646f6da8.png" title=" Userqa clicks on Label Vendedor" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-t-into-input-vende-c787256767.png" title=" Userqa enters &amp;quot;t&amp;quot; into input vendedor" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-opci-n-vendedor-c7dd815319.png" title=" Userqa clicks on opci&oacute;n vendedor" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-label-cobrador-4a1112a87f.png" title=" Userqa clicks on Label Cobrador" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-t-into-input-cobra-fd1b5c34b3.png" title=" Userqa enters &amp;quot;t&amp;quot; into input cobrador" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-opci-n-cobrador-5f7ae68b35.png" title=" Userqa clicks on opci&oacute;n cobrador" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-scroll-to-element-textareainput-c0b9c8a3df.png" title=" #scroll to element #textareainput in the center of the viewport" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-enters-observaci-n-de-prue-c6d6f552b8.png" title=" Userqa enters &amp;quot;Observaci&oacute;n de prueba&amp;quot; into textarea observaci&oacute;n" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-clicks-on-bot-n-guardar-14ad085d2c.png" title=" Userqa clicks on bot&oacute;n guardar" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-waits-for-5s-8d3b984cb7.png" title=" Userqa waits for 5s" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-ensures-that-the-alert-mess-8d3b984cb7.png" title=" Then el usuario al finalizar el proceso, el sistema debe mostrar &amp;quot;Tercero guardado exitosamente&amp;quot;" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-ensures-that-the-alert-mess-8d3b984cb7.png" title=" Userqa ensures that the alert message after creating a customer does include &amp;quot;Tercero guardado exitosamente&amp;quot;" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-sends-a-get-request-to-htt-8d3b984cb7.png" title=" And el usuario debe validar que el cliente tercero se haya creado correctamente en el sistema en el API relation" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-sends-a-get-request-to-htt-8d3b984cb7.png" title=" Userqa realiza una petici&oacute;n GET al endpoint https://servicesqa.siigo.com/catalog/api/third-party/account/19636572-19fa-4762-8d74-73d4c0a06eea/relation" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-sends-a-get-request-to-htt-8d3b984cb7.png" title=" Userqa sends a GET request to &amp;apos;https://servicesqa.siigo.com/catalog/api/third-party/account/19636572-19fa-4762-8d74-73d4c0a06eea/relation&amp;apos;" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-espera-10-segundos-para-pro-f261a6d3be.png" title=" Userqa espera 10 segundos para procesar la respuesta" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-muestra-la-respuesta-f261a6d3be.png" title=" Userqa muestra la respuesta" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="photo-linux-chromium-144.0.7559.132-userqa-ensures-that-el-c-digo-de-r-f261a6d3be.png" title=" Userqa ensures that el código de respuesta sea does equal 200: <span class='success-color'>SUCCESS</span>" width="0" />
                 </div>
         </div>
         <div class="swiper-button-prev"></div>
