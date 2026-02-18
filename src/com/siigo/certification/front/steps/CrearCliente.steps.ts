@@ -24,7 +24,7 @@ Then('{pronombre} usuario al finalizar el proceso, el sistema debe mostrar {stri
   );
 });
 
-Then('{pronombre} usuario debe validar que el cliente tercero se haya creado correctamente en el sistema en el API relation', async (actor: Actor) => {
+Then('{pronombre} usuario debe validar que el cliente tercero se haya creado correctamente en el sistema en el API relation con el status code {string}', async (actor: Actor, statusCode: string) => {
     Wait.for(Duration.ofSeconds(20));
     const uuid = await UrlUtil.obtenerUuidActual(actor);    
     console.log('UUID actual:', uuid);
@@ -33,7 +33,7 @@ Then('{pronombre} usuario debe validar que el cliente tercero se haya creado cor
         GetApi.withEndpoint(`${process.env.BASE_URL_API}/${uuid}/relation`)
     );
     await actor.attemptsTo(
-        Ensure.that(ReviewStatusCodeApi.isStatusCodeOk, equals(200))
+        Ensure.that(ReviewStatusCodeApi.isStatusCodeOk, equals(parseInt(statusCode)))
     );
 
 });

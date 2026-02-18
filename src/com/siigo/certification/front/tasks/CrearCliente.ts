@@ -1,10 +1,11 @@
-import { Task, Wait, Duration } from "@serenity-js/core";
+import { Task, Wait, Duration, Check } from "@serenity-js/core";
 import { Click, Enter, isVisible, Scroll, Select } from "@serenity-js/web";
 import { CreateCustomerPage } from "../UserInterface/CreateCustomerPage";
 import { CustomerModel } from "../models/CustomerModel";
-import { isPresent, Ensure } from "@serenity-js/assertions";
+import { isPresent, Ensure, equals } from "@serenity-js/assertions";
 import { ScrollToElementCenter } from "../Interactions/ScrollToElementCenter";
 import { DocumentoUtil } from "../utils/DocumentoUtil ";
+import { equal } from "assert";
 
 export class CrearCliente {
     static conDatos(dataTable: CustomerModel) {
@@ -19,8 +20,7 @@ export class CrearCliente {
             Wait.for(Duration.ofSeconds(8)),
             Click.on(CreateCustomerPage.SELECT_TIPO),
             Click.on(CreateCustomerPage.TIPO_PERSONA_EMPRESA(dataTable.tipoPersona)),
-            Wait.for(Duration.ofSeconds(5)),           
-            //Ensure.that(CreateCustomerPage.MENU_TIPO_IDENTIFICACION, isVisible()), 
+            Wait.for(Duration.ofSeconds(5)),                       
             Click.on(CreateCustomerPage.SELECT_TIPO_IDENTIFICACION), 
             ScrollToElementCenter.to(CreateCustomerPage.TIPO_IDENTIFICACION_STRING(dataTable.tipoIdentificacion)), 
             Wait.upTo(Duration.ofSeconds(5)).until(
@@ -31,9 +31,13 @@ export class CrearCliente {
             Enter.theValue(numeroIdentificacion).into(CreateCustomerPage.INPUT_NUMERO_IDENTIFICACION),
             Enter.theValue(dataTable.dv).into(CreateCustomerPage.INPUT_DV),
             Enter.theValue(dataTable.codSucursal).into(CreateCustomerPage.INPUT_CODIGO_SUCURSAL),
-            Enter.theValue(dataTable.nombres).into(CreateCustomerPage.INPUT_NOMBRES),
-            Enter.theValue(dataTable.apellidos).into(CreateCustomerPage.INPUT_APELLIDOS),
-            Enter.theValue(dataTable.razonSocial).into(CreateCustomerPage.INPUT_RAZON_SOCIAL),
+            Check.whether(dataTable.tipoPersona, equals('Es persona')).andIfSo(
+                Enter.theValue(dataTable.nombres).into(CreateCustomerPage.INPUT_NOMBRES),
+                Enter.theValue(dataTable.apellidos).into(CreateCustomerPage.INPUT_APELLIDOS),
+            ).otherwise(
+                Enter.theValue(dataTable.razonSocial).into(CreateCustomerPage.INPUT_RAZON_SOCIAL),                
+            ),
+            Enter.theValue(dataTable.razonSocial).into(CreateCustomerPage.INPUT_NOMBRE_COMERCIAL),
             Enter.theValue(dataTable.indicativo).into(CreateCustomerPage.INPUT_INDICATIVO),
             Enter.theValue(dataTable.telefono).into(CreateCustomerPage.INPUT_TELEFONO),
             Enter.theValue(dataTable.extension).into(CreateCustomerPage.INPUT_EXTENSION),

@@ -37,24 +37,14 @@ export class CreateCustomerPage {
     }
 
     static TIPO_IDENTIFICACION(tipo: string) {
-        return PageElement.located(
-            // By.css(`ul li.mdc-list-item[data-value*="${tipo}"]:nth-of-type(3)`)
+        return PageElement.located(            
             By.css(`div.mdc-select.mdc-select--activated li.mdc-list-item[data-value*='${tipo}']`)
         ).describedAs(`Selector Tipo Identificación ${tipo}`);
     }
     
     static TIPO_IDENTIFICACION_STRING(tipo: string): string {
-        return `ul li.mdc-list-item[data-value*="${tipo}"]:nth-of-type(3)`;
+        return `div.mdc-select.mdc-select--activated li.mdc-list-item[data-value*='${tipo}']`;        
     }   
-
-    // static TIPO_IDENTIFICACION(tipo: string) {
-    //     return PageElement.located(
-    //         // By.css(`siigo-dropdownlist-web:has-text("Tipo de identificación") >> li.mdc-list-item:has-text("${nombre}"):nth-of-type(3)`)
-    //         By.css(`siigo-dropdownlist-web:has-text("Tipo de identificación") >> div.mdc-select__menu.mdc-menu-surface--open >> li.mdc-list-item:has-text("${tipo}")`
-    //         )
-    //     ).describedAs(`Opción ${tipo}`);
-    // }
-
 
     static readonly INPUT_NUMERO_IDENTIFICACION = PageElement.located(
         By.css('#identification input')
@@ -108,9 +98,13 @@ export class CreateCustomerPage {
         By.css('siigo-textfield-web:has-text("* Apellidos") >> input[type="text"]')
     ).describedAs('input apellidos');
 
-    static readonly INPUT_RAZON_SOCIAL = PageElement.located(
+     static readonly INPUT_NOMBRE_COMERCIAL = PageElement.located(
         By.css('siigo-textfield-web:has-text("Nombre comercial") input')
     ).describedAs('input Nombre comercial');
+
+    static readonly INPUT_RAZON_SOCIAL = PageElement.located(
+        By.css('siigo-textfield-web:has-text("Razón social") input')
+    ).describedAs('input Razon Social');   
 
     static readonly LABEL_CIUDAD = PageElement.located(
         By.id('labelAutocompleteSelectItemcity')
