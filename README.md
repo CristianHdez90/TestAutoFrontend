@@ -1,6 +1,6 @@
 # Test Automation Frontend - Serenity/JS + Playwright + Cucumber + Screenplay
 
-Este proyecto implementa **automatización de pruebas frontend** para los módulos de Siigo, utilizando el patrón **Screenplay**, **Cucumber** (BDD) y **Serenity/JS** con **Playwright**.  
+Este proyecto implementa **automatización de pruebas frontend** para el módulo de Clientes Terceros, utilizando el patrón **Screenplay**, **Cucumber** (BDD) y **Serenity/JS** con **Playwright**.  
 
 Los reportes se generan en **Serenity BDD** y se publican automáticamente en **GitHub Pages**.
 
